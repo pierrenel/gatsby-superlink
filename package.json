@@ -1,0 +1,37 @@
+{
+  "name": "gatsby-plugin-superlink",
+  "version": "1.0.0",
+  "description": "Dynamic switching between Gatsby Link and normal hrefs based on the url",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "link",
+    "links"
+  ],
+  "author": "hello@pierre.io",
+  "bugs": {
+    "url": "https://github.com/pierrenel/gatsby-superlink/issues"
+  },
+  "homepage": "https://github.com/pierrenel/gatsby-superlink/tree/master/packages/gatsby-superlink#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pierrenel/gatsby-superlink.git",
+    "directory": "packages/gatsby-superlink"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "babel-preset-gatsby-package": "^0.2.14",
+    "cross-env": "^5.2.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
