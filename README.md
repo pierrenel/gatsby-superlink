@@ -10,7 +10,7 @@ Wraps `gatsby-link` and `a href` and switches between then based on the url in t
 
 ```javascript
 // in your component
-import Superlink from 'gatsby-link';
+import Superlink from 'gatsby-superlink';
 
 // uses gatsby link, by magic
 <p><Superlink to='/about-us'>foo</Superlink></p>
