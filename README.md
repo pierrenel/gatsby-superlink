@@ -4,13 +4,13 @@ Wraps `gatsby-link` and `a href` and switches between then based on the url in t
 
 ## Install
 
-`npm install --save gatsby-superlink`
+`npm install --save gatsby-plugin-superlink`
 
 ## How to use
 
 ```javascript
 // in your component
-import Superlink from 'gatsby-superlink';
+import Superlink from 'gatsby-plugin-superlink';
 
 // uses gatsby link, by magic
 <p><Superlink to='/about-us'>foo</Superlink></p>
