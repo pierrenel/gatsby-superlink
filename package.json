@@ -1,10 +1,9 @@
 {
   "name": "gatsby-plugin-superlink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dynamic switching between Gatsby Link and normal hrefs based on the url",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "gatsby",
     "gatsby-plugin",
