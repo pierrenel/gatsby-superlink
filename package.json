@@ -2,8 +2,6 @@
   "name": "gatsby-plugin-superlink",
   "version": "1.0.1",
   "description": "Dynamic switching between Gatsby Link and normal hrefs based on the url",
-  "main": "index.js",
-  "scripts": {},
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -21,16 +19,38 @@
     "directory": "packages/gatsby-superlink"
   },
   "license": "MIT",
-  "peerDependencies": {
-    "gatsby": "^2.0.0"
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/ --out-dir . --ignore src/specs",
+    "test": "jest --colors",
+    "test:snapshots": "jest -u --colors",
+    "test:watch": "jest --watch --colors",
+    "test:verbose": "jest --verbose --colors",
+    "test:coverage": "jest --coverage --runInBand --no-cache",
+    "release": "yarn run build && ./node_modules/.bin/standard-version"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/core": "^7.7.5",
-    "babel-preset-gatsby-package": "^0.2.14",
-    "cross-env": "^5.2.1"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@types/jest": "^25.2.1",
+    "babel-jest": "^25.5.1",
+    "babel-loader": "^8.1.0",
+    "jest": "^25.5.4",
+    "react-test-renderer": "^16.13.1"
+  },
+  "dependencies": {
+    "gatsby": "^2.21.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=10.13.0"
   }
 }
