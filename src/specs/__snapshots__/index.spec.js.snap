@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Superlink /> external links as default 1`] = `
+<a
+  href="https://douglas.adams"
+  rel="nofollow noopener noreferrer"
+>
+  Don't Panic!
+</a>
+`;
+
+exports[`<Superlink /> external links as full of props 1`] = `
+<a
+  ariaLabel="Douglas Adams"
+  href="https://douglas.adams"
+  rel="nofollow noopener noreferrer"
+  target="_blank"
+>
+  Don't Panic!
+</a>
+`;
+
+exports[`<Superlink /> internal links as default 1`] = `
+<a
+  href="/blog"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+>
+  Don't Panic!
+</a>
+`;
+
+exports[`<Superlink /> internal links as full of props 1`] = `
+<a
+  href="/blog"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  otherThing="otherThing"
+>
+  So long and thanks for all the fish.
+</a>
+`;
